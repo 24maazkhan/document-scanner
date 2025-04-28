@@ -2,14 +2,10 @@ import requests
 import os
 import argparse
 
-# URL of your running Flask server
 SERVER_URL = 'http://localhost:5000'
 
 
 def test_scan(input_path, output_path):
-    """
-    Sends the image to /scan and writes the returned JPEG bytes.
-    """
     with open(input_path, 'rb') as img_file:
         files = {'file': img_file}
         resp = requests.post(f'{SERVER_URL}/scan', files=files)
@@ -23,9 +19,6 @@ def test_scan(input_path, output_path):
 
 
 def test_ocr(input_path, output_path):
-    """
-    Sends the image to /ocr and writes the returned text.
-    """
     with open(input_path, 'rb') as img_file:
         files = {'file': img_file}
         resp = requests.post(f'{SERVER_URL}/ocr', files=files)
