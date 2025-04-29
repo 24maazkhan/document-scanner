@@ -85,7 +85,7 @@ export default function DocumentScanner() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
-            <Label htmlFor="fileUpload">Upload Document (JPEG/JPG Only)</Label>
+            <Label htmlFor="fileUpload">Upload Document (PNG/JPG Only)</Label>
             <Input
               id="fileUpload"
               type="file"
