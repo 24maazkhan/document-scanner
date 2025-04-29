@@ -3,6 +3,8 @@ import numpy as np
 from imutils.perspective import four_point_transform
 import pytesseract
 
+# Test File for OCR and CV2 Scan using Video
+
 #Tesseract OCR Path
 pytesseract.pytesseract.tesseract_cmd = r'E:\Programs\Tesseract-OCR\tesseract.exe'
 
